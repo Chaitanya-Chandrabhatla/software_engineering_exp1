@@ -3,6 +3,7 @@ import math
 # Try opening the file
 try:
     with open("Software programming/input_Single_Set.txt", "r") as fp:
+
         a, b, c = map(float, fp.read().split())
 except FileNotFoundError:
     print("File not found")

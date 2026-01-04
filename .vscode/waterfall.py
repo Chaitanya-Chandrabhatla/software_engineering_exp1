@@ -10,16 +10,16 @@ c = 15.0
 time = np.linspace(0, 10, 100)
 
 # Temperature calculation
-temperature = (a * time**2) + (b * time) + c
+temp = (a * time**2) + (b * time) + c
 
 # Plotting
 plt.figure(figsize=(10, 6))
-plt.plot(time, temperature, linewidth=2, label="Final Model Output")
+plt.plot(time, temp, linewidth=2, label="Final Output")
 plt.title("Waterfall Model")
 plt.xlabel("Time (hours)")
-plt.ylabel("Temperature (°C)")
+plt.ylabel("Temp (°C)")
 plt.legend()
 plt.grid(True, linestyle="--", alpha=0.6)
 
-print("Waterfall graph generated")
+print("Graph generated")
 plt.show()
